@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Smart_Parking_System/static/css/main.352a30d7.css",
+    "main.js": "/Smart_Parking_System/static/js/main.79e11bfa.js",
+    "static/js/453.67109cd4.chunk.js": "/Smart_Parking_System/static/js/453.67109cd4.chunk.js",
+    "static/media/img-1.jpg": "/Smart_Parking_System/static/media/img-1.038782edd630becb7523.jpg",
+    "static/media/b2.png": "/Smart_Parking_System/static/media/b2.466715bd6fcc01bc9111.png",
+    "static/media/c1.png": "/Smart_Parking_System/static/media/c1.a3bf5704401e9579e7b5.png",
+    "static/media/b3.png": "/Smart_Parking_System/static/media/b3.29f5d3e8fff8dc0fe0fa.png",
+    "index.html": "/Smart_Parking_System/index.html",
+    "main.352a30d7.css.map": "/Smart_Parking_System/static/css/main.352a30d7.css.map",
+    "main.79e11bfa.js.map": "/Smart_Parking_System/static/js/main.79e11bfa.js.map",
+    "453.67109cd4.chunk.js.map": "/Smart_Parking_System/static/js/453.67109cd4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.352a30d7.css",
+    "static/js/main.79e11bfa.js"
+  ]
+}
