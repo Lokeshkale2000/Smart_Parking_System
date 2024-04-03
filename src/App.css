@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./assets/img-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  /* margin: 2rem; */
+  /* padding: 10em; */
+  /* overflow: hidden; */
+  color: white;
+  overflow-wrap: break-word;
+}
+
+.wrapper {
+  padding-top: 20em;
+}
+
+.line__1 {
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0.5rem auto;
+  font-size: 4rem;
+}
+
+.line__2 {
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0.5rem auto;
+  font-size: 6rem;
+}
+
+.line__1 {
+  border-right: 2px solid rgba(255, 145, 1, 0.9);
+  animation: animated-text__1 2s steps(20, end) 1s 1 normal both,
+    animated-cursor__1 200ms steps(20, end) infinite;
+}
+
+.line__2 {
+  border-right: 2px solid rgba(17, 17, 17, 0.9);
+
+  animation: animated-text__2 3s steps(30, end) 1s 1 normal both,
+    animated-cursor__2 300ms steps(30, end) infinite;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+@keyframes animated-cursor__1 {
+  from {
+    border-right-color: rgba(17, 17, 17, 0.9);
+  }
+  to {
+    border-right-color: rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes animated-cursor__2 {
+  from {
+    border-right-color: rgba(17, 17, 17, 0.9);
+  }
+  to {
+    border-right-color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@keyframes animated-text__1 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 30rem;
+  }
+}
+
+@keyframes animated-text__2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60rem;
+  }
+}
+
+.dashboard-btn-section {
+  padding-top: 60em;
+}
+
+.dashboard-btn {
+  width: 20em;
+  font-size: 2rem;
+  padding: 0.8em 0.6em;
+  margin: 0.5em;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    to right,
+    #1a2980 0%,
+    #26d0ce 51%,
+    #1a2980 100%
+  );
+  transition: 0.5s;
+  background-size: 200% auto;
+}
+
+.dashboard-btn:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.parking-status-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.parking-status-header {
+  font-size: 5rem;
+  font-weight: 600;
+  margin-bottom: 0.7em;
+}
+
+.indicator-info-header {
+  font-size: 3rem;
+  font-size: 500;
+  margin-bottom: 1.5em;
+}
+
+.indicator-info {
+  padding: 8em;
+  width: 30%;
+  border: 2px solid rgb(89, 56, 56);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  border-radius: 10px;
+}
+
+.parking-status-data {
+  padding: 8em;
+  width: 65%;
+  border: 2px solid rgb(89, 56, 56);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  border-radius: 10px;
+}
+
+.floor {
+  margin: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.floor h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-right: 2em;
+  margin-left: 0.5em;
+}
+
+.parking-lot-container {
+  display: flex;
+}
+
+.indicator {
+  margin: 50em 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 10em;
+}
+
+.indicator p {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.parking-lot {
+  width: 350em;
+  height: 400em;
+  border-top: 2px solid #cccccc;
+  border-left: 2px solid #cccccc;
+  border-right: 2px solid #cccccc;
+  margin: 40em 80em;
+  /* background-color: lightgray; */
+}
+
+.indicator .parking-lot {
+  width: 200em;
+  height: 200em;
+  margin-right: 100em;
+}
+
+.empty {
+  /* background-color: lightgray; */
+}
+
+.bike {
+  /* background-color: blue; */
+  background: url('./assets/b3.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.two-bikes {
+  background: url('./assets/b2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.car {
+  background: url('./assets/c1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parking-status {
+  padding: 2rem;
+}
+
+.button-container {
+  margin-top: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.parking-status {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.back-btn {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 5;
+  margin-top: 3em;
+}
+
+.park-vehicle,
+.remove-vehicle {
+  padding: 25em;
+  position: relative;
+}
+
+.park-vehicle h1,
+.remove-vehicle h1 {
+  font-size: 5rem;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 1em;
+}
+
+.back-btn-park {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 5;
+  margin-top: 3em;
+}
+
+.radio-btns {
+  font-size: 6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.4em;
+}
+
+.radio-btns label {
+  margin-right: 1.2em;
+  margin-left: 0.3em;
+}
+
+.available-slots-section {
+  font-size: 3rem;
+}
+
+.available-heading {
+  font-size: 2rem;
+  margin-bottom: 1.5em;
+  margin-top: 2em;
+}
+
+ul {
+  list-style: none;
+  font-size: 3rem;
+}
+
+ul li {
+  display: inline-block;
+  padding: 0 1em;
+  border: 1px solid red;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+ul li button {
+  margin: 1em;
+}
+
+.select-slot,
+.select-vehicle {
+  font-size: 2rem;
+  margin-bottom: 0.9em;
+}
+
+select {
+  font-size: 2.8rem;
+  background-color: #304646;
+  border: none;
+  padding: 0.2em 0.4em;
+  margin-bottom: 0.9em;
+  color: rgb(141, 141, 141);
+}
+
+option {
+  padding: 0.8em;
+}
+
+@media only screen and (max-width: 600px) {
+  * {
+    font-size: 50%;
+    
+  }
+  .parking-lot{
+    height: 2000em;
+    width: 1800em;
+    margin: 0 700em;
+  }
+  .indicator{
+    margin-bottom: 250em;
+  }
+  .indicator .parking-lot {
+    width: 900em;
+    height: 1000em;
+    
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  * {
+    font-size: 40%;
+  }
+  .parking-lot{
+    height: 20000em;
+    width: 18000em;
+    margin: 0 7000em;
+  }
+  .indicator{
+    margin-bottom: 1500em;
+  }
+  .indicator .parking-lot {
+    width: 6000em;
+    height: 8000em;
+    
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  *{
+    overflow: scroll;
+
+  }
+  .parking-status-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40em;
+  } 
+  .indicator-info, .parking-status-data{
+    width: 80%;
+    margin-bottom: 20em;
+  }
+  
+}
